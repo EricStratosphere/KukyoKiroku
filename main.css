@@ -1,0 +1,194 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+html, body{
+    width : 100%;
+    height : 100%;
+    margin : 0;
+    padding : 0;
+    overflow-x : hidden;
+}
+
+main{
+    height : auto;
+    width : 100vw;
+}
+
+header{
+    height : auto;
+}
+
+body {
+    background-color: bisque;
+    font-family : "Poppins", Times, Serif;
+}
+
+.mySection{
+    width : 100vw;
+    height:auto;
+    background-position:center;
+    margin-bottom : 20px;
+    margin-top : 50px;
+    display:flex;
+    text-align : center;
+    justify-content : center;
+}
+
+
+.outerLayer{
+    background-color: white;
+    width: 500px;
+    height : 500px;
+    padding : 50px;
+    border-radius:100%;
+    margin-bottom : 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+#tagline{
+    font-size : 30px;
+    color :rgb(105, 69, 9);
+    text-align:center;
+}
+.myFigureImg{
+    width  : inherit;
+    height : inherit;
+    object-fit : cover;
+    border-radius : 100%;
+    margin-bottom : 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+#about-us {
+    width : 100%;
+    text-align : center;
+    padding : 8px;
+    color :rgb(250, 234, 208);
+    background-color :rgb(170, 138, 99);
+    margin-bottom : 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+}
+
+#about-us h3{
+    font-size : 30px;
+    color : rgb(61, 38, 3);
+    margin-bottom : 12px;
+}
+
+#aboutusarticle p{
+    font-size : 23px;
+    padding : 0px 50px 0px 50px;
+}
+#meettheartists{
+    text-align : center;
+    height: auto;
+    width :100vw;
+    color :rgb(105, 69, 9);
+}
+
+#meettheartists h2{
+    margin-bottom : 20px;
+    font-size : 40px;
+}
+
+.artist-list{
+    display:flex;
+    /* display : grid;
+    grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+     
+    grid-template-rows:repeat(auto-fill, minmax(200px, 1fr));
+     */
+    flex-wrap :wrap;
+    justify-content : center;
+    flex-shrink : 20px;
+    gap : 50px;
+    margin-left : auto;
+    margin-right:auto;
+    padding : 10px 10px;
+    height : auto;
+}
+
+
+.imgcontainer{
+    background-color : black;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+    height : 150px;
+    position : relative;
+}
+
+.imgcontainer img{
+    width : 100%;
+    height : 100%;
+    border-top-left-radius : 20px;
+    border-top-right-radius : 20px;
+    object-fit: cover;
+    position : absolute;
+    left : 0;
+}
+.artist-card{
+    background-color: rgb(252, 205, 148);
+    border-radius : 20px;
+    height : auto;
+    width : 300px;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.artist-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 4);
+}
+
+.artist-list a{
+    text-decoration : none;
+}
+
+.artist-content{
+    color : rgb(61, 38, 3);
+    height : 150px;
+    align-content : start;
+    margin-top : 20px;
+}
+
+.artist-content h3{
+    font-weight : 800;
+    font-size : 1.25rem;
+}
+.artist-content p{
+    margin-top : 10px;
+    font-size : 17px;
+    padding : 8px;
+    font-weight : 700;
+}
+
+footer{
+    margin : 50px 0px 0px 0px;
+    height : auto;
+    background-color: rgb(192, 149, 97);
+    text-align : center;
+}
+footer summary{
+    font-size : 1.5rem;
+}
+footer p{
+    height : 100%;
+    width : 100%;
+    align-content : center;
+    font-size : 1.25rem;
+}
+
+.fulldisclosure summary:hover{
+    cursor:pointer;
+}
+
+::-webkit-scrollbar{
+    background-color :transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(158, 105, 26), rgb(243, 201, 149));
+    border-radius:20px;
+}
