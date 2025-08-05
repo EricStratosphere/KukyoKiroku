@@ -206,10 +206,16 @@ footer p{
     }
 
     .artist-card{
-        width : 200px;
+        width : 150px;
     }
 
     .artist-content p{
         font-size : 10px;
     }
+
+    #tagline{
+    font-size : 15px;
+    color :rgb(105, 69, 9);
+    text-align:center;
+}
 }
