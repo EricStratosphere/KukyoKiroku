@@ -39,8 +39,8 @@ body {
 
 .outerLayer{
     background-color: white;
-    width: 350px;
-    height : 350px;
+    width: 400px;
+    height : 400px;
     padding : 50px;
     border-radius:100%;
     margin-bottom : 30px;
@@ -191,4 +191,17 @@ footer p{
 ::-webkit-scrollbar-thumb{
     background:linear-gradient(rgb(158, 105, 26), rgb(243, 201, 149));
     border-radius:20px;
+}
+
+@media screen and (max-width:600px){
+        
+    .outerLayer{
+        background-color: white;
+        width: 250px;
+        height : 250px;
+        padding : 50px;
+        border-radius:100%;
+        margin-bottom : 30px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    }
 }
