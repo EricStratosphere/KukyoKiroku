@@ -10,6 +10,7 @@
         
         <link rel="stylesheet" href="styling/main.css" type="text/css">
         <link rel="stylesheet" href="styling/artist-page.css" type="text/css">
+        <link rel="stylesheet" href="styling/audioplayer.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -21,8 +22,8 @@
     <body>
         <header id="artist-img">
             <div id="overlay">
-                <h1>Artist Name</h1>
-                <h2>Artist Moniker</h2>
+                <h1 id="artist-name"></h1>
+                <h2 id="artist-moniker"></h2>
             </div>
             <img src="img/arwin_studio.webp" alt="">
         </header>
@@ -30,15 +31,37 @@
             <div>
                 <h1>About the artist</h1>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptates nesciunt blanditiis possimus temporibus pariatur aut sequi cupiditate enim sed unde, facere qui recusandae inventore doloremque eaque libero ipsum commodi?
+            <p id="artist-description">
             </p>
         </section>
+
+        <figure id="work-samples">
+            <figcaption>Work Samples</figcaption>
+            <div id="audio-player-container">
+                <audio src="audios/shelter.mp3" preload="metadata"></audio>
+                <button id="play-icon"></button>
+                <span id="current-time" class="time">0:00</span>
+                <input type="range" id="seek-slider" max="100" value="0">
+                <span id="duration" class="time">0:00</span>
+            </div>
+        </figure>
+
         <script type="module">
-            document.getElementById("artist-name");
             import {someString} from './artistData.js'
+            const artistName = "Artist Name"
+            const artistMoniker = "Artist Moniker"
+            const artistDescription = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptates nesciunt blanditiis possimus temporibus pariatur aut sequi cupiditate enim sed unde, facere qui recusandae inventore doloremque eaque libero ipsum commodi?"
+            document.getElementById("artist-name");
+
+            const artistNameTextNode = document.createTextNode(artistName);
+            document.getElementById("artist-name").appendChild(artistNameTextNode);
+            const artistMonikerTextNode = document.createTextNode(artistMoniker);
+            document.getElementById("artist-moniker").appendChild(artistMonikerTextNode);
+            const artistDescriptionTextNode = document.createTextNode(artistDescription);
+            document.getElementById("artist-description").appendChild(artistDescriptionTextNode);
             console.log(someString);
         </script>
+        <script type="module" src="./artistFunctions.js"></script>
     </body>
     
 </html>
