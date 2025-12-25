@@ -9,13 +9,15 @@ const audios = [
   {
     url : "audios/null.mp3",
     trackTitle : "null",
-    fuilSongUrl : "",
+    fullSongUrl : "",
+    imgurl : "img/arwin_studio.webp"
   }, 
 
   {
     url : 'audios/shelter.mp3',
     trackTitle : 'Shelter',
-    fullSongUrl : "",
+    fullSongUrl : "https://stackoverflow.com/questions/38065668/html-template-element-clarification",
+    imgurl : "img/arwin_studio.webp"
   }
 ]
 
@@ -29,11 +31,15 @@ audios.forEach((audioinfo, index)=>{
   const audioPlayerContainer = (document.getElementsByClassName("audio-player-container"))[index];
   const playIconContainer = (document.getElementsByClassName('play-icon'))[index];
   const trackTitle = (document.getElementsByClassName('track-title'))[index];
-  console.log("trackTitle: " + trackTitle);
   const trackTitleContent = document.createTextNode(audioinfo.trackTitle)
-  trackTitle.appendChild(trackTitleContent);
+  const image = (document.getElementsByClassName('audio-player-img'))[index];
+  const aTag = (document.getElementsByClassName('full-song-link'))[index];
+  
   let state = 'play';
-
+  
+  image.src = audioinfo.imgurl;
+  aTag.href = audioinfo.fullSongUrl
+  trackTitle.appendChild(trackTitleContent);
   console.log("Script connected!");
   const animation = lottieWeb.loadAnimation({
       container: playIconContainer,

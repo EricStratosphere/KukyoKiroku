@@ -89,4 +89,5 @@ button:hover{
 .audio-player-container a:hover{
     font-weight : bold;
     text-decoration : underline;
+    cursor:pointer;
 }
