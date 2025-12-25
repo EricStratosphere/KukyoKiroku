@@ -25,27 +25,48 @@
                 <h1 id="artist-name"></h1>
                 <h2 id="artist-moniker"></h2>
             </div>
-            <img src="img/arwin_studio.webp" alt="">
+            <img src="img/arwin_studio.webp" alt="Artist Image">
         </header>
-        <section id="artist-bio">
-            <div>
+        <section id="artist-bio" class="section">
+            <div class="section-header">
                 <h1>About the artist</h1>
             </div>
             <p id="artist-description">
             </p>
         </section>
 
-        <figure id="work-samples">
-            <figcaption>Work Samples</figcaption>
-            <div id="audio-player-container">
-                <audio src="audios/shelter.mp3" preload="metadata"></audio>
-                <button id="play-icon"></button>
-                <span id="current-time" class="time">0:00</span>
-                <input type="range" id="seek-slider" max="100" value="0">
-                <span id="duration" class="time">0:00</span>
+        <figure id="work-samples" class="section">
+            <figcaption class="section-header"><h1>Work Samples</h1></figcaption>
+            <template id="audio-player-template">
+            <div class="audio-player-container">
+                <div class="img-container">
+                    <img class='audio-player-img' src="" alt="cover-art">
+                </div>
+
+                <div class="music-info">
+                <h3 class="track-title"></h3>
+                <div class="music-controls">
+                    <audio src="" preload="metadata" loop></audio>
+                    <button class="play-icon"></button>
+                    <div class="seek-bar-container">
+                        <span class="current-time" class="time">0:00</span>
+                        <input type="range" class="seek-slider" max="100" value="0">
+                        <span class="duration" class="time">0:00</span>
+                    </div>
+                    <a class="full-song-link"  >Listen to full song here!</a>
+                </div>
+                </div>
             </div>
+            </template>
         </figure>
 
+
+        <script>
+            setTimeout(()=>{
+                const overlay = document.getElementById("overlay");
+                overlay.style.animation = "fadeIn 2s forwards";
+            }, 2000);
+        </script>
         <script type="module">
             import {someString} from './artistData.js'
             const artistName = "Artist Name"
@@ -61,7 +82,6 @@
             document.getElementById("artist-description").appendChild(artistDescriptionTextNode);
             console.log(someString);
         </script>
-        <script type="module" src="./artistFunctions.js"></script>
+        <script type="module" src="./artistFunctions.js" defer></script>
     </body>
-    
 </html>
