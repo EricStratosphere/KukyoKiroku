@@ -55,6 +55,13 @@
             </template>
         </figure>
 
+
+        <script>
+            setTimeout(()=>{
+                const overlay = document.getElementById("overlay");
+                overlay.style.animation = "fadeIn 2s forwards";
+            }, 2000);
+        </script>
         <script type="module">
             import {someString} from './artistData.js'
             const artistName = "Artist Name"

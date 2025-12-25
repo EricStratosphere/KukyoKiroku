@@ -11,7 +11,10 @@
     display : flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2.5vw;
 }
+
+
 #overlay{
     height : 100%;
     width : 100%;
@@ -36,7 +39,7 @@
     display : flex;
     flex-direction: column;
     align-items: center;
-    margin-top : 5vw;
+    margin-bottom : 20px;
 }
 #artist-bio p{
     margin-top : 20px;
@@ -58,10 +61,34 @@
 #artist-img img{
     width : 100%;
     height : 100%;
-    object-fit :cover;
+    object-fit : cover;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 #work-samples{
     
+}
+
+
+
+
+
+/* FADE IN ANIMATIONS */
+#artist-img > :not(#overlay){
+    animation : fadeIn 2s forwards;
+}
+
+#overlay{
+    opacity : 0;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity : 0;
+        transform : translateY(-40px);
+    }
+    to{
+        transform : translateY(0);
+        opacity : 1;
+    }
 }
