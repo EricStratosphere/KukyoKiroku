@@ -42,7 +42,7 @@
     align-items: center;
     margin-bottom : 20px;
 }
-#artist-bio p{
+.section p{
     margin-top : 20px;
     /* background-color: aqua; */
     max-width: 1250px;
@@ -52,12 +52,12 @@
     font-weight: 300;
 }
 
-.section-header{
+.section-header h1{
     color: rgb(106, 84, 28);
     width : 100%;
     text-align: center;
     padding-bottom : 10px;
-    border-bottom : 3px solid rgb(85, 64, 32)
+    border-bottom : 5px solid rgb(85, 64, 32)
 }
 #artist-img-container img{
     width : 100%;
@@ -70,13 +70,31 @@
     
 }
 
+#artist-contact-links{
+    width : 100vw;
+    /* background-color: blue; */
+    display : flex;
+    justify-content : center;
+    gap : 40px;
+    margin-top : 20px;
+    
+}
 
-
+.socmed-icon{
+    
+    height : 70px;
+    width : 70px;
+    /* background-color: blue; */
+}
+.socmed-icon img{
+    height : 100%;
+    width : 100;
+}
 
 
 /* FADE IN ANIMATIONS */
 #artist-img-container > :not(#overlay){
-    animation : fadeIn 2s forwards;
+    animation : fadeIn 1s forwards;
 }
 
 #overlay{
@@ -85,9 +103,10 @@
 
 .audio-player-container{
     opacity : 0;
-    animation : fadeIn 2s forwards;
+    animation : fadeIn 1s forwards;
     animation-delay : 1s;
 }
+
 
 
 

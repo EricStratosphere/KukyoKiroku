@@ -1,0 +1,155 @@
+[33mcommit bacd126a6331e9ec0b22a1fc668a9fdab8ecebff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/artist-page[m[33m, [m[1;31morigin/feature/artist-page[m[33m)[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Thu Dec 25 12:30:46 2025 +0800
+
+    Link artist data in external JavaScript module to HTML script
+
+[33mcommit 77f452863deb2517bc54a7d44dd97531395e6958[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Thu Dec 25 12:13:37 2025 +0800
+
+    Add data for artist name, nickname and descriptionin ArtistData.js
+
+[33mcommit 09df673f98a20063bca28a75f49de5bd786a8c72[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Thu Dec 25 11:54:33 2025 +0800
+
+    Add full song link to audio player card
+
+[33mcommit 09ac5206e426ad8a67cea57fe2cd54f107500f1d[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Thu Dec 25 11:41:54 2025 +0800
+
+    Add dynamic rendering to audio player HTML template. Cards are now dependent on the contents of audios array to render.
+
+[33mcommit 70c52e1ab60dec29ffe4de5d13e601290891c848[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Thu Dec 25 11:13:37 2025 +0800
+
+    Improve UI and UX of audio player card. Add lottieweb for button animation.
+
+[33mcommit 87e9dd0126f2676da0bc66fdddebd590ebdad018[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Thu Dec 25 08:41:40 2025 +0800
+
+    Add fade-in transition to main header image in artist-page. Follow up with a delayed fade-in transition for the artist name and moniker.
+
+[33mcommit b7f3f31110b014f07bd261943089a254204b3cfc[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Thu Dec 25 08:02:15 2025 +0800
+
+    Add functionality to custom audio player template. Wrap entire component in template for ease of cloning in case of multiple works.
+
+[33mcommit f4b0a7e9c63c0af15425473b8bcf3575e7cfe46a[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Wed Dec 24 20:58:52 2025 +0800
+
+    Setup custom interface for playing audio
+
+[33mcommit 59d5313b1669d1397eb3837d3d081c59575b6e2b[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Wed Dec 24 17:20:15 2025 +0800
+
+    Add base template for artist-page. Mock data to be added later
+
+[33mcommit d8d6f05a0dffddc0759202cd9fbd3c5aafea5ff1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 23:23:42 2025 +0800
+
+    Fix footer h3
+
+[33mcommit 6a2922809a865d64d659910bec1cc34d0a143028[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 23:11:37 2025 +0800
+
+    Change footer size
+
+[33mcommit a6644e8ea27157870ebf82416a64bd1a18e79cce[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 23:10:46 2025 +0800
+
+    Improve full disclosure message
+
+[33mcommit 7db98f4e26fec8c2e58f7a058d180c0432267f61[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 23:09:19 2025 +0800
+
+    Improve full disclosure message
+
+[33mcommit 1f6c677a19f7ed4e1499073062bfd036b2bb2a52[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 23:07:06 2025 +0800
+
+    Fix responsive media query on footer h3
+
+[33mcommit a046737da5bc86583c67e27389fc4bffdcc544b6[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 23:06:14 2025 +0800
+
+    Fix responsive media query on footer h3
+
+[33mcommit 1dde8b2a3e12e4f27bd2f977bc5e676fadb2dfd1[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 23:05:11 2025 +0800
+
+    Fix responsive media query on footer
+
+[33mcommit 2415503c49ecc32c7761fad61084644dc578a66e[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 23:03:33 2025 +0800
+
+    Fix responsive media query on footer
+
+[33mcommit adf1eb57e9bc7d2a28c59f6337a701f2ac6c8a04[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 23:02:38 2025 +0800
+
+    Add fourth card. An old friend
+
+[33mcommit 5e8ce0129fbabba9b248dd5e85f7184bbc54c1a4[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 22:57:56 2025 +0800
+
+    Fix responsive media query on footer
+
+[33mcommit 25ecd96e609ae3aba9d33465d0e3c417a8ccfa74[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 22:15:59 2025 +0800
+
+    Fix responsive media query bugs
+
+[33mcommit b804bbd28aa686fdb1be79d1f93b0d7c3826e86f[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 21:58:53 2025 +0800
+
+    Fix responsiveness query glitches
+
+[33mcommit 447985d74025245ab4b4a908c3efc21a972fa552[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 21:57:31 2025 +0800
+
+    Fix responsiveness query glitches
+
+[33mcommit 17aec9e4e7121e9e4a5bc7f017e0670a6dc2eefb[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 21:54:53 2025 +0800
+
+    Add responsive design for mobile devices
+
+[33mcommit 7fe453bc4a75698b17ab0f51c54920407a22648c[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 21:52:06 2025 +0800
+
+    Change logo's pixel size
+
+[33mcommit eb3c2b7b19887626d81a5ada2160ec2a7d888e57[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 20:48:11 2025 +0800
+
+    Add index.html and main.css
+
+[33mcommit c584803539726fc80801530147e2d9f988536033[m
+Author: EricStratosphere <140722924+EricStratosphere@users.noreply.github.com>
+Date:   Tue Aug 5 20:41:35 2025 +0800
+
+    First commit

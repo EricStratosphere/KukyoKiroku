@@ -53,19 +53,55 @@
                         <input type="range" class="seek-slider" max="100" value="0">
                         <span class="duration" class="time">0:00</span>
                     </div>
-                    <a class="full-song-link"  >Listen to full song here!</a>
+                    <a class="full-song-link">Like what you hear? Listen to full song here!</a>
                 </div>
                 </div>
             </div>
             </template>
         </figure>
         
+        <section id="contact-artist" class= "section">
+            <div class="section-header">
+                <h1>Socials</h1>
+            </div>
+            <!-- <p>If you would like to get in touch with the artist for commissions, collaborations, or any other inquiries, please reach out to them through their social media channels listed below:</p> -->
+            <div id="artist-contact-links">
+                <a href="" class="socmed-icon">
+                    <img src="img/instagram.svg" alt="Instagram Icon">
+                </a>
+                <a href="" class="socmed-icon">
+                    <img src="img/spotify.svg" alt="Instagram Icon">
+                </a>
+                
+                <a href="" class="socmed-icon">
+                    <img src="img/soundcloud.svg" alt="Instagram Icon">
+                </a>
+            </div>
+        </section>
 
+
+        <footer>
+            <h3>
+                &copy; 2025 Kukyo Kiroku. All rights reserved.
+            </h3>
+             <aside class="fulldisclosure">
+                <details>
+                    <summary >Full disclosure.</summary>      
+
+                    <p>
+                        The artists featured on this website are the only members of Kukyo Kiroku. Anyone who claims to be a member of Kukyo Kiroku that is not listed here is not part of the collective.
+                        <br>
+                        <br>
+                        In other words: Piss off, razorblackman. 
+                    </p>
+                </details>
+             </aside>
+        </footer>
         <script>
             setTimeout(()=>{
                 const overlay = document.getElementById("overlay");
                 overlay.style.animation = "fadeIn 2s forwards";
-            }, 2000);
+            }, 1000);
         </script>
         <script type="module">
             import {someString, Artists} from './artistData.js'
