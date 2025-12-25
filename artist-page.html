@@ -20,12 +20,12 @@
         <title>Kukyo Kiroku</title>
     </head>
     <body>
-        <header id="artist-img">
+        <header id="artist-img-container">
             <div id="overlay">
                 <h1 id="artist-name"></h1>
                 <h2 id="artist-moniker"></h2>
             </div>
-            <img src="img/arwin_studio.webp" alt="Artist Image">
+            <img id="artist-img" src="" alt="Artist Image">
         </header>
         <section id="artist-bio" class="section">
             <div class="section-header">
@@ -59,7 +59,7 @@
             </div>
             </template>
         </figure>
-
+        
 
         <script>
             setTimeout(()=>{
@@ -68,11 +68,19 @@
             }, 2000);
         </script>
         <script type="module">
-            import {someString} from './artistData.js'
-            const artistName = "Arwin Gabryel Labarda"
-            const artistMoniker = "musicbyarwin"
-            const artistDescription = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptates nesciunt blanditiis possimus temporibus pariatur aut sequi cupiditate enim sed unde, facere qui recusandae inventore doloremque eaque libero ipsum commodi?"
+            import {someString, Artists} from './artistData.js'
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+
+            const artist = urlParams.get('artist');
+            const artistData = Artists[artist];
+            const artistName = artistData.artistName;
+            const artistMoniker = artistData.artistMoniker;
+            const artistDescription = artistData.artistDescription;
+            const artistUrl = artistData.imgUrl;
+
             document.getElementById("artist-name");
+            document.getElementById("artist-img").src = artistUrl;
 
             const artistNameTextNode = document.createTextNode(artistName);
             document.getElementById("artist-name").appendChild(artistNameTextNode);
