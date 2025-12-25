@@ -40,16 +40,21 @@
             <template id="audio-player-template">
             <div class="audio-player-container">
                 <div class="img-container">
-                    <img src="" alt="cover-art">
+                    <img src="img/arwin_studio.webp" alt="cover-art">
                 </div>
 
-                <div class="music-controls">
+                <div class="music-info">
                 <h3 class="track-title">Track Title</h3>
-                <audio src="" preload="metadata" loop></audio>
-                <button class="play-icon"></button>
-                <span class="current-time" class="time">0:00</span>
-                <input type="range" class="seek-slider" max="100" value="0">
-                <span class="duration" class="time">0:00</span>
+                <div class="music-controls">
+                    <audio src="" preload="metadata" loop></audio>
+                    <button class="play-icon"></button>
+                    <div class="seek-bar-container">
+                        <span class="current-time" class="time">0:00</span>
+                        <input type="range" class="seek-slider" max="100" value="0">
+                        <span class="duration" class="time">0:00</span>
+                    </div>
+                    <a href="">Listen to full song here!</a>
+                </div>
                 </div>
             </div>
             </template>
