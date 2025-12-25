@@ -1,6 +1,12 @@
 import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
-const audioPlayerContainer = document.getElementById("audio-player-container");
-const playIconContainer = document.getElementById('play-icon');
+
+const figure = document.getElementById('work-samples');
+const template = document.getElementById('audio-player-template');
+const instantiatedTemplate = template.content.cloneNode(true);
+figure.appendChild(instantiatedTemplate);
+
+const audioPlayerContainer = (document.getElementsByClassName("audio-player-container"))[0];
+const playIconContainer = (document.getElementsByClassName('play-icon'))[0];
 let state = 'play';
 
 console.log("Script connected!");
@@ -17,13 +23,11 @@ animation.goToAndStop(14, true);
 
 // adds an event listener to the button so that when it is clicked, the the player toggles between play and pause
 
-
-const audio = document.querySelector('audio');
-const durationContainer = document.getElementById('duration');
-const bufferedAmount = audio?.buffered.end(audio.buffered.length - 1);
-const seekableAmount = audio?.seekable.end(audio.seekable.length - 1);
-const currentTimeContainer = document.getElementById('current-time');
-const seekSlider = document.getElementById('seek-slider');
+const audio = (document.querySelectorAll('audio'))[0];
+audio.setAttribute("src", "audios/shelter.mp3");
+const durationContainer = (document.getElementsByClassName('duration'))[0];
+const currentTimeContainer = (document.getElementsByClassName('current-time'))[0];
+const seekSlider = (document.getElementsByClassName('seek-slider'))[0];
 
 seekSlider.addEventListener('input', () => {
   currentTimeContainer.textContent = calculateTime(seekSlider.value);
